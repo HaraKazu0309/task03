@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task03</title>
+  <?php get_header(); ?>
 </head>
+
 <body>
   <header>
-
+    <div class="headerContainer">
+      <div class="headerLogo">
+        <h1>SAMPLE site.</h1>
+      </div>
+      <nav class="headerNav">
+        <ul class="navList">
+          <li class="navItem">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="navItem">
+            <a href="#">SERVICE</a>
+          </li>
+          <li class="navItem">
+            <a href="#">BLOG</a>
+          </li>
+          <li class="navItem">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
 </body <?php body_class(); ?>>
+
 </body>
+
 </html>

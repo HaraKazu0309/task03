@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP", "Raleway"
+    sans-serif;
+  color: #323232;
+}
+
+.headerContainer {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px 28px;
+
+}
+.headerLogo h1 {
+  font-family: "Raleway"
+    sans-serif;
+  font-size: 33px;
+  letter-spacing: 3.3px;
+  line-height: 1.15;
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navList li {
+  font-size: 23px;
+  line-height: 1.7;
+  margin-right: 37px;
+
+}
+.navList li:last-child {
+  margin-right: 0;
+  color: #fff;
+  background: #FF406C;
+  padding: 17px 63px;
+  border-radius: 9px;
+}
