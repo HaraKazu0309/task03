@@ -1,9 +1,20 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Noto Sans JP", "Raleway"
-    sans-serif;
+  font-family: "Noto Sans JP", "Raleway",sans-serif;
   color: #323232;
+}
+.inner {
+  width: 100%;
+  max-width: 957px;
+  margin: 0 auto;
+}
+.sectionTitle {
+  text-align: center;
+}
+.sectionTitle p {
+  font-size: 28px;
+  color: #FF406C;
 }
 
 .headerContainer {
@@ -38,4 +49,28 @@ body {
   background: #FF406C;
   padding: 17px 63px;
   border-radius: 9px;
+}
+
+/* イントロダクション*/
+.intro {
+  width: 100%;
+  height: calc(100vh - 92px);
+  background: url("../inc/image/mv_bg.png") no-repeat center center;
+  background-size: cover;
+}
+.introContainer {
+  padding-top: 304px;
+}
+.intro h2 {
+  font-size: 42px;
+  line-height: 1.5;
+  letter-spacing: 4.2px;
+  color: #fff;
+  margin-bottom: 68px;
+}
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1.8px;
+  color: #fff;
 }
