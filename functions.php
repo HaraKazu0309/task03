@@ -24,7 +24,7 @@ function get_eycatch_with_default()
   return $img;
 }
 
-// カスタム投稿を使い場合はコメントアウト
+// カスタム投稿を使う場合はコメントアウト
 // add_action('init', function () {
 // register_post_type('item', [
 // 'label' => '商品',

@@ -56,7 +56,10 @@ line-height: 1.6;
   border-radius: 9px;
 }
 
-/* イントロダクション*/
+/**********
+* イントロダクション
+**********/
+
 .intro {
   width: 100%;
   height: calc(100vh - 92px);
@@ -79,9 +82,12 @@ line-height: 1.6;
   letter-spacing: 1.8px;
   color: #fff;
 }
-
+/**********
+* About
+**********/
 .about {
   margin-top: 77px;
+  padding-bottom: 174px;
 }
 .aboutList {
   display: flex;
@@ -131,3 +137,47 @@ line-height: 1.6;
   letter-spacing: 0.75px;
   line-height: 1.6;
 }
+
+/**********
+* Service
+**********/
+.service {
+  width: 100%;
+  padding-top: 76px;
+  padding-bottom: 215px;
+  background: #EFEFEF;
+}
+.serviceItem{
+  margin-top: 107px;
+  display: flex;
+  gap: 74px 57px;
+}
+.serviceItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+.serviceItem_subTitle {
+  padding-top: 21px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: #FF406C;
+}
+.serviceItem_title {
+  font-size: 32px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+.serviceItem_text {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/**********
+* Blog
+**********/
+.blog {
+  width: 100%;
+  padding-top: 107px;
+}
+

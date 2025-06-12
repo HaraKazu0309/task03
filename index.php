@@ -79,6 +79,71 @@
     </ul>
   </div>
 </section>
+<section id="service" class="service">
+  <div class="inner">
+    <div class="sectionTitle">
+      <p>SERVICE</p>
+      <h2>サービス内容</h2>
+    </div>
+    <ul class="serviceList">
+      <li class="serviceItem">
+        <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_1.png" alt="会議の様子">
+        <div class="serviceItem_desc">
+          <p class="serviceItem_subTitle">
+            SERVICE CONTENTS
+          </p>
+          <h3 class="serviceItem_title">
+            サービス内容タイトル
+          </h3>
+          <p class="serviceItem_text">
+            サービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキスト
+          </p>
+        </div>
+
+      </li>
+      <li class="serviceItem">
+        <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_2.png" alt="会議の様子">
+        <div class="serviceItem_desc">
+          <p class="serviceItem_subTitle">
+            SERVICE CONTENTS
+          </p>
+          <h3 class="serviceItem_title">
+            サービス内容タイトル
+          </h3>
+          <p class="serviceItem_text">
+            サービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキスト
+          </p>
+        </div>
+
+      </li>
+      <li class="serviceItem">
+        <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_3.png" alt="会議の様子">
+        <div class="serviceItem_desc">
+          <p class="serviceItem_subTitle">
+            SERVICE CONTENTS
+          </p>
+          <h3 class="serviceItem_title">
+            サービス内容タイトル
+          </h3>
+          <p class="serviceItem_text">
+            サービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキストサービス内容テキスト
+          </p>
+        </div>
+
+      </li>
+    </ul>
+</section>
+<section id="blog" class="blog">
+  <div class="inner">
+    <div class="sectionTitle">
+      <p>Blog</p>
+      <h2>ブログ</h2>
+    </div>
+    <div class="tabs">
+      
+    </div>
+  </div>
+</section>
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
 </body>
