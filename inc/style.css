@@ -179,5 +179,192 @@ line-height: 1.6;
 .blog {
   width: 100%;
   padding-top: 107px;
+  padding-bottom: 107px;
 }
 
+/*タブ切り替え*/
+.tabs {
+  width: 100%;
+  max-width: 100%;
+  /* margin: 10% auto; */
+  margin-bottom: 107px;
+  margin-top: 103px;
+}
+
+.tab-list {
+  width: 100%;
+  max-width: 957px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 77px;
+}
+
+.tab-item {
+  border-radius: 5px 5px 0 0;
+  color: #EFEFEF;
+  background-color: #FF406CB7;
+  border: solid 1px #FF406CB7;
+  font-size: 22px;
+  line-height: 1.6;
+  padding: 6px 0;
+  cursor: pointer;
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.tab-content {
+  background-color: #fff;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-item.active {
+  background-color: #FF406C;
+}
+.tab-panel.active {
+  display: block;
+  padding: 11px 0;;
+}
+.tab-panel_list {
+  display: flex;
+  gap: 0 30px;
+
+
+}
+.tab-panel_item {
+  width: calc((100%) / 4);
+
+  background-color: #fff;
+  /* margin-right: 30px; */
+}
+.tab-panel_category {
+  font-size: 15px;
+  line-height: 1.46;
+  color: #FF406C;
+  margin-bottom: 9px;
+}
+.tab-panel_title {
+  font-size: 17px;
+  line-height: 1.64;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.tab-panel_text {
+  font-size: 10px;
+  line-height: 1.7;
+
+}
+
+.tab-panel.active h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.blogButton {
+  display: block;
+  margin: 0 auto;
+  width: 238px;
+  height: 68px;
+  background: #FF406C;
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+}
+
+.contact {
+  width: 100%;
+  padding-top: 67px;
+  padding-bottom: 80px;
+  background: #EFEFEF;
+}
+.contact .sectionTitle {
+  text-align: left;
+  margin-bottom: 31px;
+}
+.contactDesc {
+  font-size: 20px;
+  line-height: 2.5;
+  letter-spacing: 2px;
+  margin-bottom: 56px;
+}
+.contactConteiner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 19px;
+}
+.telSide {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 22px;
+
+}
+.telLead {
+  display: flex;
+  gap:0 62px;
+  padding-top: 33px;
+  justify-content: center;
+
+}
+.telTitle {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.9;
+  letter-spacing: 1.5px;
+}
+.telTime {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8B8B8B;
+  line-height: 2.4;
+  letter-spacing: 1.2px;
+}
+.telNumber {
+  font-size: 37px;
+  font-weight: bold;
+  line-height: 2.1;
+  color: #FF406C;
+  text-align: center;
+
+}
+.telNumber span {
+  margin-right: 9px;
+}
+.mailSide {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 22px;
+  padding-top: 33px;
+}
+.mailTitle {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.9;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+
+}
+.mailAdress {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 2.1;
+  color: #FF406C;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #323232;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 3.2;
+}

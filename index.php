@@ -140,10 +140,99 @@
       <h2>ブログ</h2>
     </div>
     <div class="tabs">
-      
+      <ul class="tab-list">
+        <li class="tab-item active" tabindex="0">WEB制作</li>
+        <li class="tab-item" tabindex="0">マーケティング</li>
+        <li class="tab-item" tabindex="0">SNS運用</li>
+        <li class="tab-item" tabindex="0">コンサルティング</li>
+      </ul>
+      <?php
+      $categories = array(
+        'web' => 'WEB制作',
+        'marketing' => 'マーケティング',
+        'socialmedia' => 'SNS運用',
+        'consulting' => 'コンサルティング'
+      );
+      ?>
+      <div class="tab-content">
+        <?php foreach ($categories as $slug => $label) : ?>
+          <div class="tab-panel  <?php echo $slug === 'web' ? 'active' : ''; ?>" id="cat-<?php echo esc_attr($slug); ?>">
+            <ul class="tab-panel_list">
+              <?php
+              $args = array(
+                'posts_per_page' => 4,
+                'category_name' => $slug, // スラッグで絞り込み
+              );
+              $query = new WP_Query($args);
+
+              if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post(); ?>
+                  <li class="tab-panel_item">
+
+                    <a href="<?php echo get_permalink(); ?>" class="tab-panel_link">
+                      <p class="tab-panel_category"><?php echo esc_html($label); ?></p>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <img class="tab-panel_img" src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title_attribute(); ?>">
+                      <?php else : ?>
+                        <img class="tab-panel_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/thumbnail_1.png" alt="代替サムネイル">
+                      <?php endif; ?>
+                      <h3 class="tab-panel_title"><?php the_title(); ?></h3>
+                      <p class="tab-panel_text"><?php echo get_the_excerpt(); ?></p>
+                    </a>
+                  <?php endwhile;
+                wp_reset_postdata();
+              else : ?>
+                  <li class="tab-panel_item">投稿が見つかりませんでした。</li>
+                <?php endif; ?>
+                </li>
+
+            </ul>
+          </div>
+        <?php endforeach; ?>
+      </div>
     </div>
+    <button class="blogButton"><a href="#">Read More</a></button>
   </div>
 </section>
+<section id="contact" class="contact">
+  <div class="inner">
+    <div class="sectionTitle">
+      <p>CONTACT</p>
+      <h2>お問い合わせ</h2>
+    </div>
+    <p class="contactDesc">
+      お問い合わせの説明お問い合わせの説明お問い合わせの説明。
+    </p>
+    <div class="contactConteiner">
+      <div class="telSide">
+        <div class="telLead">
+          <p class="telTitle">
+            お電話でのお問い合わせ
+          </p>
+          <p class="telTime">
+            営業時間10:00~19:00
+          </p>
+        </div>
+        <p class="telNumber">
+          <span><i class="fa-solid fa-phone"></i></span>00-0000-0000
+        </p>
+      </div>
+      <div class="mailSide">
+        <p class="mailTitle">
+          メールでのお問い合わせ
+        </p>
+        <p class="mailAdress">
+          <span><i class="fa-solid fa-envelope"></i></span>
+          sample@sample.com
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<?php get_template_part('inc/footer'); ?>
+
+
 <?php get_footer(); ?>
 <?php wp_footer(); ?>
 </body>
