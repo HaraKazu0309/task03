@@ -24,12 +24,22 @@ line-height: 1.6;
 
 .headerContainer {
   height: 92px;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 50px 28px;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
+.headerContainer.transparent {
+  background-color: transparent;
+}
+
 .headerLogo h1 {
   font-family: "Raleway"
     sans-serif;
@@ -171,6 +181,18 @@ line-height: 1.6;
 .serviceItem_text {
   font-size: 18px;
   line-height: 1.9;
+}
+/* フェードインアニメーション */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /**********

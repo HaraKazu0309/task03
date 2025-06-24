@@ -86,7 +86,7 @@
       <h2>サービス内容</h2>
     </div>
     <ul class="serviceList">
-      <li class="serviceItem">
+      <li class="serviceItem fade-in">
         <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_1.png" alt="会議の様子">
         <div class="serviceItem_desc">
           <p class="serviceItem_subTitle">
@@ -101,7 +101,7 @@
         </div>
 
       </li>
-      <li class="serviceItem">
+      <li class="serviceItem fade-in">
         <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_2.png" alt="会議の様子">
         <div class="serviceItem_desc">
           <p class="serviceItem_subTitle">
@@ -116,7 +116,7 @@
         </div>
 
       </li>
-      <li class="serviceItem">
+      <li class="serviceItem fade-in">
         <img class="serviceItem_img" src="<?php echo get_template_directory_uri(); ?>/inc/image/service_3.png" alt="会議の様子">
         <div class="serviceItem_desc">
           <p class="serviceItem_subTitle">

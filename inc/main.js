@@ -18,3 +18,43 @@ tabItems.forEach((tabItem) => {
     tabPanels[tabIndex].classList.add('active');
   });
 });
+
+/* フェードインアニメーション */
+document.addEventListener('DOMContentLoaded', function () {
+  const targets = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  targets.forEach((target) => {
+    observer.observe(target);
+  });
+});
+
+// ヘッダーの透明化
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.headerContainer');
+  const intro = document.querySelector('.intro');
+
+  window.addEventListener('scroll', function () {
+    if (intro) {
+      const introBottom = intro.getBoundingClientRect().bottom;
+
+      if (introBottom <= 0) {
+        header.classList.add('transparent');
+      } else {
+        header.classList.remove('transparent');
+      }
+    }
+  });
+});
