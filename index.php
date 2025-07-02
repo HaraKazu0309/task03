@@ -14,7 +14,7 @@
       ヒアリング重視の<br>目的に合った最適な提案
     </h2>
     <p class="introDisc">
-      WEB制作会社のSAMPLE site.です。<br> 企業サイトや採用サイトの制作、Wordpress構築と<br> WEBマーケティングを得意としています。
+      WEB制作会社のSAMPLE site.です。<br> 企業サイトや採用サイトの制作、<br class="sp_br">Wordpress構築と<br> WEBマーケティングを得意としています。
     </p>
   </div>
 </section>
