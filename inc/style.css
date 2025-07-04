@@ -89,7 +89,6 @@ line-height: 1.6;
 @media screen and (max-width: 768px) {
   .headerContainer {
     height: 65px;
-    position: static;
     padding: 20px 30px;
     box-sizing: border-box;
   }
@@ -287,6 +286,7 @@ line-height: 1.6;
   .intro {
     background: url("../inc/image/mv_bg_sp.png") no-repeat center top;
     background-size: cover;
+    margin-bottom: 64px;
   }
   .introContainer {
     padding-top: 200px;
@@ -365,14 +365,15 @@ line-height: 1.6;
   line-height: 1.6;
 }
 @media screen and (max-width: 768px) {
+
   .aboutList {
     flex-direction: column;
-    padding: 0 40px;
+    padding: 64px 40px 0;
     gap: 64px 0;
   }
-  .abuutItem {
+  .aboutItem {
     width: 100%;
-    margin-bottom: 36px;
+    margin-bottom: 64px;
   }
   .aboutItem img {
     width: 100%;
